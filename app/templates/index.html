@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block center_content %}
+    <h1 class="general_title">Index Page</h1>
+    <p>This is <a href="#">FlaskHalfFull</a>. Do what you will with it.</p>
+    <div id="ajax_example">Data is getting fetched from the API...</div>
+    <div id="data_example"></div>
+
+    <script>
+    $(document).ready(function() {
+       ajax_example();
+    });
+
+    function ajax_example(){
+        let example_id = 24;
+        $.ajax({
+           url: '/api_example',
+           data: {
+               id: `${example_id}`
+           },
+           success: function(response){
+                let keys = Object.keys(response);
+                let values = Object.values(response);
+                let example_string = `JSON keys returned: ${keys}`  + '\n' + `JSON values returned: ${values}`;
+                document.getElementById('ajax_example').innerText = 'This is data that was fetched after the page' +
+                    ' was loaded.';
+                document.getElementById('data_example').innerText = example_string;
+           },
+           error: function(error){
+               console.log(error);
+           }
+        });
+    }
+    </script>
+{% endblock %}

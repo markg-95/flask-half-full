@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block center_content %}
+    <h1 class="general_title">Admin Page</h1>
+    <p>This is where you can keep track of your database records / backend data.</p>
+    <h2 class="general_title">Users Table</h2>
+    <table>
+    <th>User ID</th> <th>User Email</th>
+    {% for user in users %}
+        <tr>
+            <td>
+                {{ user.id }}
+            </td>
+            <td>
+                {{ user.email }}
+            </td>
+        </tr>
+    {% endfor %}
+    </table>
+{% endblock %}

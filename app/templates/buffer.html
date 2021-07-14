@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block center_content %}
+    <div class="buffer_message_wrapper">
+        {% if type == 'password_reset' %}
+            <p>Please check your email for a link to reset your password.</p>
+            <p>You will be redirected back to the login page shortly...</p>
+        {% endif %}
+    </div>
+    <script>
+    setTimeout(function(){
+        window.location.href = '{{redirect_url}}';
+    }, 10000);
+</script>
+{% endblock %}

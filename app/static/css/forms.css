@@ -1,0 +1,59 @@
+/* Form Styling */
+
+.form_message {
+    width: 98%;
+    min-height: 300px;
+    font-size: larger;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+    font-family: var(--site-font-mono);
+}
+
+.form_single_line {
+    width: 98%;
+    min-height: 50px;
+    font-size: larger;
+    padding-left: 1%
+}
+
+#contact_wrapper form {
+    width: 100%;
+    padding: 5rem;
+}
+
+form {
+    background-color: var(--dark_alpha);
+    color: var(--light);
+    font-family: var(--site-font-mono);
+    padding: 1rem;
+}
+
+.form_submit {
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    font-size: larger;
+    font-family: var(--site-font-mono);
+}
+
+.generic_form_inner_wrapper {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-color: var(--lightest);
+}
+
+.generic_form_description,.generic_form_description ul  {
+    display: grid;
+    justify-content: flex-start;
+    padding: 1rem;
+    background-color: var(--dark);
+    color: var(--lightest);
+    font-family: var(--site-font-mono);
+}
+
+.form_link:hover {
+    background-color: var(--lightest);
+    color: var(--dark);
+}

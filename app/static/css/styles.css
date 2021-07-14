@@ -1,0 +1,94 @@
+:root {
+    --dark: rgb(70,70,70);
+    --dark_alpha: rgba(70,70,70,.75);
+    --light: rgb(230,230,230);
+    --lightest: rgb(249,249,249);
+    --link-color: rgb(100,100,200);
+    --low_shadow: .25rem .5rem .5rem rgba(200, 200, 200, .5);
+    --shadow: 1px 2px 2px 2px rgba(200, 200, 200, .5);
+    --site-font-mono: "Andale Mono", "Deja Vu Sans Mono", Monospaced, monospace;
+}
+
+html {
+    background-color: var(--light);
+    font-size: larger;
+    padding: 1rem;
+    font-family: var(--site-font-mono);
+}
+
+body {
+  padding:0;
+  margin:0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+    font-family: var(--site-font-mono);
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+p {
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+a:hover {
+    font-family: var(--site-font-mono);
+    text-decoration: none;
+}
+
+table {
+    width: 100%;
+    font-family: var(--site-font-mono);
+    font-size: xx-large;
+}
+
+th {
+    background-color: var(--dark);
+    color: var(--lightest)
+}
+
+td {
+    text-align: center;
+    background-color: var(--lightest);
+    color: var(--dark);
+}
+
+
+tr {
+    border: 1px solid black;
+}
+
+#wrapper {
+    display: grid;
+    align-content: space-between;
+}
+
+.general_title {
+    font-family: var(--site-font-mono);
+    text-transform: uppercase;
+    font-size: xxx-large;
+    color: var(--dark);
+}
+
+.buffer_message_wrapper {
+    padding: 1rem;
+    font-family: var(--site-font-mono);
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+
+
+
+
+
+

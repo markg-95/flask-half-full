@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block center_content %}
+<div>
+    <h1 class="general_title">Add Album (From Bandcamp)</h1>
+    <p class="help_admin_section">
+
+    </p>
+    <form action="" method="post" enctype="multipart/form-data">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.title.label }}<br>
+            {{ form.title(class='form_single_line') }}<br>
+            {% for error in form.title.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.release_date.label }}<br>
+            {{ form.release_date(class='form_single_line') }}<br>
+            {% for error in form.release_date.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.embed_code.label }}<br>
+            {{ form.embed_code(class='form_single_line', id='embed_for_bandcamp') }}<br>
+            {% for error in form.url_embedded_src.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.url_embedded_src.label }}<br>
+            {{ form.url_embedded_src(class='form_single_line', id='embed_src') }}<br>
+            {% for error in form.url_embedded_src.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+       <p>
+            {{ form.url.label }}<br>
+            {{ form.url(class='form_single_line', id='bandcamp_link_url') }}<br>
+            {% for error in form.url.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.spotify_url_embedded_src.label }}<br>
+            {{ form.spotify_url_embedded_src(class='form_single_line', id='embed_src') }}<br>
+            {% for error in form.spotify_url_embedded_src.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+       <p>
+            {{ form.spotify_url.label }}<br>
+            {{ form.spotify_url(class='form_single_line', id='bandcamp_link_url') }}<br>
+            {% for error in form.spotify_url.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>{{ form.submit(class='form_submit') }}</p>
+    </form>
+</div>
+{% endblock %}
