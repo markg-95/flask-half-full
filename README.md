@@ -47,7 +47,7 @@ Run ```flask db upgrade```. Our updated database should get pushed to PostgreSQL
 <b>Step 11:</b><br>
 Run ```flask run```.
 The app should run on ```http://127.0.0.1:5000```.
-It should look like this: 
+It should look like this: <a href='https://flask-half-full.herokuapp.com/'>Flask Half Full.</a>
 
 <b>Step 12:</b><br>
 Make an account with the register tab.
