@@ -1,5 +1,5 @@
 # flask-half-full
-<h3>Boiler plate Flask app ready with SQLAlchemy (+ User model), migration support, email Support, jQuery ready.</h3>
+<h3>Boiler plate Flask app ready with SQLAlchemy (+ User model), connection to PostgreSQL, database migration support, email Support, jQuery ready.</h3>
 <p>Minimal work necessary to get connected to Postgres / start working.</p>
 
 <p>To finish this you need: <br>
