@@ -14,17 +14,14 @@
     function ajax_example(){
         let example_id = 24;
         $.ajax({
-           url: '/api_example',
+           url: '/api_example2',
            data: {
-               id: `${example_id}`
+               id: `${example_id}` // unused in this API call, but shows how to pass data.
            },
            success: function(response){
                 let keys = Object.keys(response);
                 let values = Object.values(response);
-                let example_string = `JSON keys returned: ${keys}`  + '\n' + `JSON values returned: ${values}`;
-                document.getElementById('ajax_example').innerText = 'This is data that was fetched after the page' +
-                    ' was loaded.';
-                document.getElementById('data_example').innerText = example_string;
+                document.getElementById('ajax_example').innerHTML = `<p>${values[0]}</p>`;
            },
            error: function(error){
                console.log(error);

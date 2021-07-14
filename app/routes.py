@@ -129,6 +129,10 @@ def api_example():
     else:
         return jsonify({'message': 'The id {} was passed to the API.'.format(data)})
 
+@app.route('/api_example2')
+def api_example2():
+    return jsonify({'Message': 'This data was fetched with an ajax call after the page loaded.'})
+
 @login_required
 @app.route('/admin')
 def admin():
