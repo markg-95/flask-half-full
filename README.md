@@ -70,6 +70,8 @@ From here... You're ready to make changes to the contents of the project.
 You'll notice in 'index.html', there is an example showing how to use jQuery to make ajax calls.
 There's also some FlaskForms, a file upload route, ready for use. I will post more about the contents of this project soon.
 
+If you're interested in deploying this app with Heroku, for now I'll refer readers to this documentation from <a href="https://devcenter.heroku.com/articles/getting-started-with-python">Heroku</a>. Notice the ```Procfile``` is ready for use in the deployment step.
+
 Here is a working example of a website made with this basic structure: <a href='https://hannahisaband.herokuapp.com/'>HANNAH website</a>.
 
 
